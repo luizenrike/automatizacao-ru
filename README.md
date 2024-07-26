@@ -1,6 +1,6 @@
-# automatizacao-ru
+# AUTOMATIZAÇÃO NO CADASTRO DE REFEIÇÕES DO RU
 
-##Automatização no agendamento de refeições do RU com .NET e Selenium.
+Automatização no agendamento de refeições do RU com .NET e Selenium.
 
 ### Configurações necessárias
 
