@@ -59,8 +59,8 @@ namespace AgendamentoRU.Connection
                 Thread.Sleep(TimeSpan.FromSeconds(2)); // wait loading page
 
 
-                Agendamento(driver, 2);
-                Agendamento(driver, 3);
+                Agendamento(driver, 2); // agendamento do almoço
+                Agendamento(driver, 3); // agendamento da janta
 
                 Console.ReadLine();
 
@@ -100,7 +100,7 @@ namespace AgendamentoRU.Connection
                 var dateAgendamento = driver.FindElement(By.Id("formulario:data_agendamento"));
 
                 var date = DateTime.Now;
-                var proxDate = date.AddDays(2);
+                var proxDate = date.AddDays(1); // sempre agenda para o próximo dia, se quiser agendar para mais de um dia, crie um parâmetro dias e passe ele na chamada
                 dateAgendamento.SendKeys(proxDate.Date.ToString());
 
                 var tipoRefeicao = driver.FindElement(By.Id("formulario:tipo_refeicao"));
